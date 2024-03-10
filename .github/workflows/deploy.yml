@@ -41,9 +41,14 @@ jobs:
         node-version: [20]
 
     steps:
+      # 拉取代码
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          # 保留 Git 信息
+          fetch-depth: 0
 
+      # 设置使用 Node.js 版本
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
