@@ -1,4 +1,4 @@
-# VitePress @sugarat/theme
+<h1 align="center"> VitePress @sugarat/theme </h1>
 
 <p align="center">
 简约风的 <a href="https://theme.sugarat.top"  target="_blank"target="_blank">VitePress 博客主题</a> 示例运行项目。
@@ -41,6 +41,7 @@ pnpm serve
 ```
 
 ## Github Pages 部署
+
 ① Github Pages 开启 Git Actions 部署支持
 
 ![](https://img.cdn.sugarat.top/mdImg/sugar/8a2454c628d0e2abcc7a0451ddd7d2dc)
