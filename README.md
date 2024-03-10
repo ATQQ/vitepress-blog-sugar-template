@@ -5,10 +5,22 @@
 </p>
 
 <p align="center">
-    <a href="https://atqq.github.io/vitepress-blog-sugar-template/" target="_blank">GitHub Pages Demo</a> |
-    <a href="https://theme.sugarat.top/" target="_blank">Online Demo</a> | 
-    <a href="https://atqq.github.io/vitepress-blog-sugar-template/" target="_blank">Gitee Pages Demo</a>
+    <a href="https://atqq.github.io/vitepress-blog-sugar-template/" target="_blank">GitHub Pages Demo</a>
 </p>
+
+## Github Pages 部署
+
+① 复制文件到自己的项目 `.github/workflows/deploy.yml`
+
+② 修改 `docs/.vitepress/config.mts` 里的构建配置
+
+`base` 改为 `"/仓库名/"` 即可
+
+## Gitee Pages 部署
+
+① 参照[文档](https://help.gitee.com/services/gitee-pages/intro)推送构建后的页面资源到部署分支
+
+② 按照 [SPA](https://help.gitee.com/services/gitee-pages/spa-support) 要求添加 `.spa` 文件在`docs/public` 目录下
 
 ## Usage
 

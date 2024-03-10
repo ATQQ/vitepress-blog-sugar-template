@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 // 导入主题的配置
 import { blogTheme } from './blog-theme'
 
+// Github/Gitee Pages 修改目录名
 const base = '/vitepress-blog-sugar-template/'
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
