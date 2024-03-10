@@ -3,14 +3,17 @@ import { defineConfig } from 'vitepress'
 // 导入主题的配置
 import { blogTheme } from './blog-theme'
 
-// Github/Gitee Pages 修改目录名
-const base = '/vitepress-blog-sugar-template/'
+// 如果使用 GitHub/Gitee Pages 等公共平台部署
+// 通常需要修改 base 路径，通常为“/仓库名/”
+const base = process.env.GITHUB_ACTIONS === 'true'
+  ? '/vitepress-blog-sugar-template/'
+  : '/'
+
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
   // 继承博客主题(@sugarat/theme)
   extends: blogTheme,
-  // 如果使用 GitHub/Gitee Pages 等公共平台部署，通常需要修改 base 路径，通常为“/仓库名/”
   base,
   lang: 'zh-cn',
   title: '@sugarat/theme',
@@ -19,8 +22,7 @@ export default defineConfig({
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
-    // 修改了 base 这里也需要同步修改，/仓库名/logo.png
-    ['link', { rel: 'icon', href: `${base}favicon.ico` }]
+    ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
   ],
   themeConfig: {
     // 展示 2,3 级标题在目录中
