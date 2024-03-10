@@ -10,6 +10,10 @@ on:
   # 支持手动在工作流上触发
   workflow_dispatch:
 
+# 设置时区
+env:
+  TZ: Asia/Shanghai
+
 # 权限设置
 permissions:
   # 允许读取仓库内容的权限。
