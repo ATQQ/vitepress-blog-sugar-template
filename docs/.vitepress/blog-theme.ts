@@ -19,18 +19,13 @@ import { getThemeConfig } from '@sugarat/theme/node'
 const blogTheme = getThemeConfig({
   // 开启RSS支持
   // RSS,
-  oml2d: {
-    mobileDisplay: true,
-    models: [
-      {
-        path: 'https://registry.npmmirror.com/oml2d-models/latest/files/models/Senko_Normals/senko.model3.json',
-      }
-    ],
-  },
+
   // 搜索
   // 默认开启pagefind离线的全文搜索支持（如使用其它的可以设置为false）
-  // 如果npx pagefind 时间过长，可以手动将其安装为项目依赖 pnpm add pagefind
   // search: false,
+
+  // markdown 图表支持（会增加一定的构建耗时）
+  // mermaid: true
 
   // 页脚
   footer: {
@@ -78,7 +73,7 @@ const blogTheme = getThemeConfig({
       { type: 'text', content: '👇公众号👇---👇 微信 👇' },
       {
         type: 'image',
-        src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210'
+        src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210~fmt.webp'
       },
       {
         type: 'text',
