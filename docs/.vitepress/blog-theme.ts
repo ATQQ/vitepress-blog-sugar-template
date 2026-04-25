@@ -24,8 +24,8 @@ const blogTheme = getThemeConfig({
   // 默认开启pagefind离线的全文搜索支持（如使用其它的可以设置为false）
   // search: false,
 
-  // markdown 图表支持（会增加一定的构建耗时）
-  // mermaid: true
+  // 默认关闭 markdown 图表支持（开启会增加一定的构建耗时）
+  // mermaid: false
 
   // 页脚
   footer: {
@@ -54,7 +54,7 @@ const blogTheme = getThemeConfig({
       nickname: '粥里有勺糖',
       des: '你的指尖用于改变世界的力量',
       avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
+        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030~fmt.webp',
       url: 'https://sugarat.top',
     },
     {
@@ -73,7 +73,8 @@ const blogTheme = getThemeConfig({
       { type: 'text', content: '👇公众号👇---👇 微信 👇' },
       {
         type: 'image',
-        src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210~fmt.webp'
+        src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210~fmt.webp',
+        alt: '粥里有勺糖微信二维码'
       },
       {
         type: 'text',
